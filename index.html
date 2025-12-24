@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="player-container">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <i class="fas fa-chevron-down"></i>
+            <span>NOW PLAYING</span>
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Album Art -->
+        <div class="album-art">
+            <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=1000&auto=format&fit=crop" alt="Album Cover" id="cover">
+        </div>
+
+        <!-- Song Details -->
+        <div class="song-info">
+            <h1 class="song-title">Midnight City</h1>
+            <p class="artist">M83</p>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <input type="range" class="progress-bar" id="progress" value="30" min="0" max="100">
+            <div class="time-stamps">
+                <span>1:12</span>
+                <span>4:03</span>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button class="secondary-btn"><i class="fas fa-shuffle"></i></button>
+            <button class="main-btn"><i class="fas fa-backward-step"></i></button>
+            <button class="play-btn" id="play-toggle">
+                <i class="fas fa-play" id="play-icon"></i>
+            </button>
+            <button class="main-btn"><i class="fas fa-forward-step"></i></button>
+            <button class="secondary-btn"><i class="fas fa-repeat"></i></button>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-controls">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-share-nodes"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
